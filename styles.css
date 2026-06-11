@@ -270,6 +270,21 @@ h1 span,
   text-align: left;
 }
 
+.product-shot {
+  overflow: hidden;
+  margin: 24px 24px 0;
+  border: 1px solid rgba(51, 65, 85, 0.68);
+  border-radius: var(--radius);
+  background: #020617;
+}
+
+.product-shot img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
 .window-bar {
   min-height: 45px;
   display: flex;
@@ -662,6 +677,36 @@ h1 span,
   padding: 4px 8px;
   border-radius: 999px;
   background: rgba(99, 102, 241, 0.12);
+}
+
+.review-card {
+  margin-bottom: 24px;
+  padding: 18px;
+  border: 1px solid rgba(51, 65, 85, 0.68);
+  border-radius: var(--radius);
+  background: rgba(2, 6, 23, 0.42);
+}
+
+.review-card p {
+  margin-bottom: 14px;
+  color: var(--muted);
+  font-size: 15px;
+}
+
+.review-card strong,
+.review-card span {
+  display: block;
+}
+
+.review-card strong {
+  color: #fff;
+  font-size: 14px;
+}
+
+.review-card span {
+  margin-top: 3px;
+  color: var(--muted-dark);
+  font-size: 12px;
 }
 
 .bar-row + .bar-row {
@@ -1239,6 +1284,10 @@ h1 span,
 
   .metrics-grid {
     padding: 16px;
+  }
+
+  .product-shot {
+    margin: 16px 16px 0;
   }
 
   .activity-panel {
